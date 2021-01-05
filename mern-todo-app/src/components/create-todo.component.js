@@ -66,6 +66,7 @@ export default class CreateTodo extends Component {
                                 className="form-control"
                                 value={this.state.todo_description}
                                 onChange={this.onChangeTodoDescription}
+                                />
                     </div>
                 </form>
                 
