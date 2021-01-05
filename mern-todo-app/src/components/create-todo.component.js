@@ -18,22 +18,22 @@ export default class CreateTodo extends Component {
   }
 
   onChangeTodoDescription(e) {
-    this.setState({
-      todo_description: e.target.value
-    });
-  }
+        this.setState({
+            todo_description: e.target.value
+        });
+    }
 
-  onChangeTodoResponsible(e) {
-    this.setState({
-      todo_responsible: e.target.value
-    });
-  }
+    onChangeTodoResponsible(e) {
+        this.setState({
+            todo_responsible: e.target.value
+        });
+    }
 
-  onChangeTodoPriority(e) {
-    this.setState({
-      todo_priority: e.target.value
-    });
-  }
+    onChangeTodoPriority(e) {
+        this.setState({
+            todo_priority: e.target.value
+        });
+    }
 
   onSubmit(e) {
     e.preventDefault();
@@ -44,12 +44,12 @@ export default class CreateTodo extends Component {
     console.log(`Todo Priority: ${this.state.todo_priority}`);
     console.log(`Todo completed: ${this.state.todo_completed}`);
 
-    this.setState = ({
+    this.setState({
       todo_description: '',
       todo_responsible: '',
       todo_priority: '',
       todo_completed: false
-    });
+    })
   }
 
   render() {
@@ -118,6 +118,6 @@ export default class CreateTodo extends Component {
           </div>
         </form>
       </div>
-    );
+    )
   }
 }
