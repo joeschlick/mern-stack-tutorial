@@ -14,5 +14,6 @@ let Todo = new Schema({
     todo_completed: {
         type: Boolean 
     },
+});
 
-})
+module.exports = mongoose.model("Todo", Todo);
